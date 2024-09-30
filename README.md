@@ -8,6 +8,9 @@ A user-friendly calculator application built using HTML, CSS, and JavaScript. It
 - User-friendly interface with a modern look.
 - 3D button effects for an engaging user experience.
 
+## Live Demo
+You can view the live demo of the calculator [here](https://a5hhaad.github.io/SmartCalculator/).
+
 ## Installation
 To run this project locally, follow these steps:
 1. Clone the repository:
