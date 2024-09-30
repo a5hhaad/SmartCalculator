@@ -1,0 +1,82 @@
+/* Global styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator styles */
+.calculator {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    padding: 20px; /* Add padding to create space around the display */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+#display {
+    width: 100%; /* Use full width of the calculator */
+    height: 70px; /* Increased height for a larger display */
+    font-size: 28px; /* Increased font size for better readability */
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin to create space between display and buttons */
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensure padding is included in width */
+    color: black; /* Change text color to black */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    transform: rotateX(10deg);
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: white; /* Change button color to white */
+    color: black; /* Change text color to black for numpad buttons */
+    border: none;
+    border-radius: 50%; /* Make buttons round */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: translateZ(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex; /* Center text inside button */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.btn:hover {
+    background-color: #e0e0e0; /* Lighten button on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.equal-btn {
+    background-color: #03dac6;
+}
+
+.equal-btn:hover {
+    background-color: #018786;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add 3D effect to buttons */
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
